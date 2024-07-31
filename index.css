@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  /* background-color: rgb(32, 32, 32); */
+  background-color: rgb(188, 187, 187);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  overflow-x: auto;
+  /* background-color: rgb(67, 66, 64); */
+  background-color: rgb(104, 104, 104);
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+.Galery {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  width: 70%;
+}
+li {
+  list-style-type: none;
+}
+.Galery img {
+  height: 60%;
+  width: 60%;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.Countries {
+  background-color: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  margin-top: 20px;
+}
+.Image h2 {
+  color: white;
+  text-align: center;
+  margin-top: -40px;
+}
+.Image {
+  height: 50vh;
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+}
+.Image img {
+  height: 40vh;
+  width: 40vh;
+}
+.previous {
+  background-color: rgb(51, 111, 111);
+  border-radius: 70px 0px 0px 70px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.next {
+  background-color: rgb(51, 111, 111);
+  border-radius: 0px 70px 70px 0px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.prevnext {
+  display: flex;
+  margin-top: 14px;
+}
+.selected {
+  border: 2.2px solid white;
+  height: 100%;
+}
+#PhotoNext,#PhotoPrevious {
+  cursor: pointer;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  height: 10vh;
+  border: none;
+}
+@media (max-width: 768px) {
+  body{
+    background-color: black;
+  }
+}
+@media (max-width: 576px) {
+  .Galery {
+    width: 50px;
+    height: 10vh;
+  }
+  .Image img {
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Image{
+    display: flex;flex-direction: column;
+  }
+  .Countries{
+    display: flex;
+    flex-direction: row;
+  }
+  .Image h2 {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .Galery {
+    width: 60px;
+    height: 12vh;
+  }
+  .Image img {
+    height: 35vh;
+    width: 35vh;
+  }
+  .Image h2 {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .Galery {
+    width: 80px;
+    height: 15vh;
+  }
+  
+  .Image img {
+    height: 30vh;
+    width: 30vh;
+  }
+  .Image h2 {
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .Galery {
+    width: 100px;
+    height: 18vh;
+  }
+  .Image img {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Galery {
+    width: 120px;
+    height: 20vh;
+  }
+  
+  .Image img {
+    height: 45vh;
+    width: 45vh;
+  }
+}
+
