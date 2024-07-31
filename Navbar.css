@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 140px;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgb(19, 18, 23);
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    font-family: "LXGW WenKai TC", cursive;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 570px) {
+    .ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        width: 100%;
+        height: 90px;
+        text-align: center;
+    }
+  }
+
